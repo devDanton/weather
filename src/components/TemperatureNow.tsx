@@ -1,5 +1,4 @@
 import { CloudRain, Drop, MapPin, Wind } from '@phosphor-icons/react';
-import React from 'react';
 
 export function TemperatureNow() {
   return (
