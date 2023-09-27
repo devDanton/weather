@@ -6,13 +6,15 @@ module.exports = {
     extend: {
       colors: {
         text: "#C2BFF4",
-        fontFamily: {
-          regular: 'Lato_400_regular',
-          bold: 'Lato_700_Bold',
-          extrabold: 'Lato_900_Black',
-        },
+        primary: "#6D67D0"
       },
-      plugins: [],
-    }
+      fontFamily: {
+        regular: 'Lato_400_regular',
+        bold: 'Lato_700_Bold',
+        extrabold: 'Lato_900_Black',
+      },
+    },
+    plugins: [],
   }
 }
+

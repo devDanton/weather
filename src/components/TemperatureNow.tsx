@@ -1,7 +1,18 @@
 import { CloudRain, Drop, MapPin, Wind } from '@phosphor-icons/react';
-import React from 'react';
+import { useState } from 'react';
+import { Button } from './Button';
+import { Input } from './Input';
 
 export function TemperatureNow() {
+  const apiKey = "02dc19fe56260d04a9ed3c29bf0e93e6";
+  const apiCountryUrl = "https://countryflagapi.com/png/"
+
+  const btnSearch = document.querySelector('#btnSearch');
+  const inputCity = document.querySelector('#inputCity');
+
+  const [valorInput, setValorInput] = useState("");
+
+
   return (
     <div
       id='location'
@@ -19,6 +30,7 @@ export function TemperatureNow() {
           className='text-[#C2BFF4] w-5 h-5'
         />
         <p
+          id='outputCity'
           className='text-[#C2BFF4]
           text-sm font-bold'
         >Ítajai, SC</p>
@@ -67,6 +79,15 @@ export function TemperatureNow() {
           </div>
         </div>
       </div>
+      <Input
+        label='Digite sua cidade'
+        placeholder='São Paulo'
+        value={valorInput}
+        onChange={(e) => { }}
+      />
+      <Button
+        label='Button'
+        onClick={() => { }} />
     </div >
   );
 }
